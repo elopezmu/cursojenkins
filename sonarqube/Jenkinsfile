@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('gradle:jdk8-alpine')
+    def myGradleContainer = docker.image('gradle:6.9.4-jdk11-jammy')
     myGradleContainer.pull()
 
     stage('Preparación') {
